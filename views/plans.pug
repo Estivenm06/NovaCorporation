@@ -1,0 +1,11 @@
+extends ./layout/index.pug
+
+block slider
+    include ./layout/sliderBlock
+
+block content
+    .mx-auto.container(class="grid md:grid-cols-2 lg:grid-cols-4 justify-center duration-250 mt-15")
+        include ./layout/cardBlock
+    h2.text-center.text-5xl.mt-15#reviews Reseñas
+        .mx-auto.container(class="grid lg:grid-cols-2 duration-250 mb-15")
+            include ./layout/reviewBlock

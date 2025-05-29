@@ -1,0 +1,14 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="/styles/output.css")
+        link(rel="shortcut icon", href="/img/Logo-icon.png", type="image/x-icon")
+        link(href='https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap' rel='stylesheet')
+        title= title
+    body(class= classPug)
+    include header
+    block slider
+    block content 
+    include footer

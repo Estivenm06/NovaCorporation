@@ -1,0 +1,17 @@
+- var total = 5;
+each review in reviewsArray
+        .rounded-md.border.border-neutral-800.bg-gray-200.px-10.py-5.shadow-sm.m-3
+            .flex.gap-2
+                - for (var i = 0; i < review.reviewStar; i++)
+                    span.text-yellow-500.text-3xl ★
+                - for (var i = 0; i < (total - review.reviewStar); i++)
+                    span.text-gray-400.text-3xl ☆
+
+            p.my-4.mb-0.text-lg.text-justify #{review.review}
+            
+            .mt-2.flex.items-center.gap-2
+                .h-10.w-10.overflow-hidden.rounded-full.shadow-sm.outline-neutral-800 
+                    .relative.inline-block.overflow-hidden.rounded-lg.border-neutral-800 
+                        img(src=review.photo, alt="", width="50", height="50")
+                div 
+                    p.leading-relaxed.tracking-wide.text-2xl #{review.name}

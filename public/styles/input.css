@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+.slider {
+  background: url("../img/Banner.png") no-repeat center;
+  min-height: 600px;
+  height: 100vh;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.navegation {
+  background: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+body {
+  font-family: "Bebas Neue", sans-serif;
+}
+
+footer {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.plans {
+  background-color: #433A48;
+}
