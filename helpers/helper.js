@@ -36,6 +36,7 @@ const reviewsArray = [
 
 const plansArray = [
   {
+    id: 1,
     name: "Gratis",
     value: 0,
     advantages: {
@@ -45,6 +46,7 @@ const plansArray = [
     },
   },
   {
+    id: 2,
     name: "Basico",
     value: 25000,
     advantages: {
@@ -55,6 +57,7 @@ const plansArray = [
     },
   },
   {
+    id: 3,
     name: "Premium",
     value: 40000,
     advantages: {
@@ -65,6 +68,7 @@ const plansArray = [
     },
   },
   {
+    id: 4,
     name: "Profesional",
     value: 55000,
     advantages: {

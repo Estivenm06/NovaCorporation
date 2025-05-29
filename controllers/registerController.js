@@ -1,4 +1,3 @@
-import jwt from 'jsonwebtoken';
 import { emailValidation } from "../helpers/helper.js";
 
 const getRegister = (req, res) => {
@@ -48,12 +47,12 @@ const postRegister = async (req, res) => {
     const newUser = {
       nombre,
       email,
+      contraseña
     }
 
-    const token = jwt.sign(newUser, 'anyString')
-    newUser.token = token;
     res.render('register', {
       newUser,
+      title: "NovaCorporation | Registrarse",
       greeting: "Usuario creado"
     });
   }

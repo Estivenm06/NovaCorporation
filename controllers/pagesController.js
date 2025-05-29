@@ -15,7 +15,7 @@ const getPlans = (req, res) => {
         greeting: 'Bienvenido a  Nebulã (Planes)',
         classPug: 'plans',
         plansArray,
-        reviewsArray
+        reviewsArray,
     })
 }
 

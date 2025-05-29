@@ -30,8 +30,18 @@ const postLogin = (req, res) => {
       contraseña,
     });
   } else {
-    console.log(req.body);
-    res.redirect("/");
+    const userLogin = {
+      email,
+      contraseña,
+    }
+    console.log(userLogin);
+    
+
+    res.render('login', {
+      userLogin,
+      title: "NovaCorporation | Inicio de sesion",
+      greeting: "Te has logueado correctamente",
+    });
   }
 };
 
