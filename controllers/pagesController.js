@@ -1,9 +1,9 @@
 
 const getMain = (req, res) => {
     res.render('main', {
-        title: 'Inicio',
+        title: 'NovaCorporation | Inicio',
         nameUser: 'Estiven',
-        page: 'Inicio'
+        greeting: 'Bienvenido a  Nebulã (Inicio)'
     })
 };
 
@@ -76,9 +76,9 @@ const reviewsArray = [
 
 const getPlans = (req, res) => {
     res.render('plans', {
-        title: 'Planes',
+        title: 'NovaCorporation | Planes',
         nameUser: 'Estiven',
-        page: 'Planes',
+        greeting: 'Bienvenido a  Nebulã (Planes)',
         classPug: 'plans',
         plansArray,
         reviewsArray
@@ -87,5 +87,5 @@ const getPlans = (req, res) => {
 
 export {
     getMain,
-    getPlans
+    getPlans,
 }
