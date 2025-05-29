@@ -13,10 +13,16 @@
 
 .navegation {
   background: transparent;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
+  z-index: 1000;
+  transition: transform 0.3s ease-in-out; /* Smooth transition */
+}
+
+.navegation.hidden-navbar {
+  transform: translateY(-100%); /* Adjust based on your navbar's height */
 }
 
 body {

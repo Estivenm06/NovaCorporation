@@ -1,11 +1,10 @@
 import express from "express";
 import { getMain, getPlans } from "../controllers/pagesController.js";
+import { getLogin, postLogin } from "../controllers/loginContoller.js";
 import {
-  getLogin,
   getRegister,
-  postLogin,
   postRegister,
-} from "../controllers/accessController.js";
+} from "../controllers/registerController.js";
 
 const router = express.Router();
 

@@ -1,12 +1,17 @@
 extends ./layout/index.pug
 
 block slider
-    .slider
-        .mx-auto.container.flex.justify-center
-                form(action="/login", method="post" class="bg-gray-500/80 transition-opacity px-10 py-15 rounded-lg text-2xl flex flex-col text-white shadow-md")
-                    label(for="email" class="text-center  hover:text-gray-300 cursor-pointer duration-250") Email
-                    input(name="email" id="email" type="text" class="ring-2 rounded-md text-center text-3xl mb-5 " placeholder="Ingresa tu Email...")
-                    label(for="contraseña" class="text-center hover:text-gray-300 cursor-pointer duration-250") Contraseña
-                    input(name="contraseña" id="contraseña" type="password" class="ring-2 rounded-md text-center text-3xl mb-5" placeholder="Ingresa tu Contraseña...")
-                    button(type="submit" class="border border-purple-600 rounded-lg bg-purple-500 hover:bg-purple-600 hover:shadow-2xl mt-5 cursor-pointer duration-250") Iniciar Sesion
-                    a(href="/register" class="text-center text-black hover:text-gray-200 mt-5 duration-250 hover:shadow-2xl z-10") ¿No tienes cuenta?
+    include ./layout/sliderBlock.pug
+
+block content 
+    .mx-auto.container.flex.justify-center
+        form(action="/login", method="post" class="bg-gray-100/80 transition-opacity px-10 py-12 my-20 rounded-md text-2xl flex flex-col shadow-md font-sans mx-5 md:mx-0")
+            if(errors)
+                each error in errors 
+                    div(class="py-2 text-center rounded-md my-2 bg-red-500 text-xl select-none px-2 text-white")=error.message
+            label(for="email" class="text-center cursor-pointer ") Email
+            input(name="email" id="email" type="text" class="rounded-md text-center text-xl mb-5 py-2 mt-2 border-2 border-gray-500 hover:border-gray-700" placeholder="Ingresa tu Email" value=email)
+            label(for="contraseña" class="text-center cursor-pointer") Contraseña
+            input(name="contraseña" id="contraseña" type="password" class="rounded-md text-center text-xl mb-5 py-2 mt-2 border-2 border-gray-500 hover:border-gray-700" placeholder="Ingresa tu Contraseña" value=contraseña)
+            button(type="submit" class="border border-purple-600 bg-purple-500 mt-5 cursor-pointer duration-250 py-1.5 text-gray-100 hover:rounded-lg hover:bg-purple-600 hover:shadow-xl") Iniciar Sesion
+            a(href="/register" class="text-center mt-5 duration-250 hover:shadow-2xl rounded-lg z-10 p-2") ¿No tienes cuenta?
