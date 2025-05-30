@@ -1,5 +1,6 @@
 import { openOrCreateDatabase, addUser, getUserByEmail, handleCardClick } from "./functions.js";
 import { setupNavbarScrollEffect } from "./navBar.js";
+import '../styles/output.css'
 
 document.addEventListener("DOMContentLoaded", async () => {
   try {

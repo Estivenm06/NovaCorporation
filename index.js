@@ -10,6 +10,7 @@ app.use(express.urlencoded({extended: true}));
 
 // Set up view engine in this case pug
 app.set('view engine', 'pug');
+app.set('pug options', { pretty: false })
 
 // Define a static folder
 app.use(express.static('public'));
