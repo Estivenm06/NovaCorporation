@@ -1,10 +1,10 @@
 footer.bg-purple-900.text-gray-300.footer.nav
     .mx-auto.container.divide-y-1
-        .grid(class="md:grid-cols-2 py-8")
+        .grid(class="md:grid-cols-2 py-8 mx-10")
             .flex.flex-col.gap-10(class="items-center sm:items-start")
                 img(src="./img/Logo.webp", alt="Logo" class="img-fluid w-10 rounded-full select-none")
                 p ¿Por qué usar Nebulã?
-                p.text-sm.-mt-5.text-center Es tu fuente confiable de imágenes astronómicas excepcionales que combina calidad, accesibilidad y una pasión por la astronomía.
+                p.text-sm.-mt-5(class="text-center mx-5 sm:mx-0 md:text-left sm:text-left") Es tu fuente confiable de imágenes astronómicas excepcionales que combina calidad, accesibilidad y una pasión por la astronomía.
                 .flex.gap-4
                     a(href="https://facebook.com") 
                         img(src="./img/facebook.webp", alt="Facebook" class="img-fluid h-5")
@@ -12,9 +12,9 @@ footer.bg-purple-900.text-gray-300.footer.nav
                         img(src="./img/twitter.webp", alt="Twitter" class="img-fluid h-5")
                     a(href="https://github.com/Estivenm06") 
                         img(src="./img/github.webp", alt="Github" class="img-fluid h-5")
-            .flex.flex-col
-                h1.text-center.text-2xl.font-bold.uppercase.mb-3 Colaboraciones
-                .flex.justify-center
+            .flex.flex-col.mt-5
+                h1.text-2xl.font-bold.uppercase.mb-3(class="text-center md:text-center sm:text-left md:justify-center") Colaboraciones
+                .flex(class="mx-5 md:mx-0 justify-center sm:justify-start md:justify-center")
                     ul.list-disc
                         li CelestialTech
                         li CosmicLearning
@@ -22,5 +22,5 @@ footer.bg-purple-900.text-gray-300.footer.nav
                         li AstronomySoft
                         li StellarPrints
 
-        .py-5.text-center.mx-5(class="sm:text-left sm:mx-0")
-            p © 2025 Nebula Corporation, Inc. All rights reserved.
+        .py-5.text-center(class="sm:text-left mx-10")
+            p(class="mx-10 md:mx-0") © 2025 Nebula Corporation, Inc. All rights reserved.

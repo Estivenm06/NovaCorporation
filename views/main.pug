@@ -13,15 +13,17 @@ block content
                         .flex.justify-end.mb-3
                             button.w-full.justify-center.rounded-full.bg-white.px-3.py-2.text-md.shadow-xs.ring-2.ring-gray-300.ring-inset(type='button' class='hover:bg-gray-50 sm:mt-0 sm:w-auto cursor-pointer modalClose') X
                         img(src="/img/Photo1.webp", alt="Photo 1" class="rounded-lg img-fluid")
-    .container(class="mx-auto py-6 px-5 lg:px-0 mt-15   ")
-        h1.text-center.text-7xl.font-bold Sobre Nosotros
-        p.text-justify.text-2xl.my-5 ¿Alguna vez has mirado al cielo nocturno y te has maravillado ante la inmensidad del cosmos?. La astronomía es una ciencia fascinante que nos invita a explorar los secretos del universo, desde las estrellas y galaxias distantes hasta los planetas cercanos. Sin embargo, para adentrarse en este apasionante mundo, uno necesita acceso a imágenes de calidad que muestren la belleza del espacio profundo y los objetos celestes. Aquí es donde entra en juego "Nebulã", una innovadora empresa dedicada a proporcionar imágenes astronómicas de alta calidad de manera accesible para todos los entusiastas de la astronomía. Nuestra misión es acercar las maravillas del universo a tu pantalla, permitiéndote explorar el cosmos desde la comodidad de tu hogar.
-        button(type="button" class="buttonModal py-2 px-10 bg-purple-500 rounded-full text-white text-4xl hover:bg-purple-700 duration-250 cursor-pointer") Presione
-    .container(class="mx-auto py-6 px-5 lg:px-0 my-20" id="services")
-        h1.text-center.text-7xl.font-bold Servicios
-        p.text-justify.text-2xl.mt-5 En "Nebulã", creemos que la belleza del universo no debe estar reservada solo para astrónomos profesionales. Por eso, trabajamos arduamente para capturar imágenes espectaculares de los objetos celestes más fascinantes y convertirlas en recursos accesibles para todos. Así que, si eres un apasionado de la astronomía, un educador que busca recursos visuales impactantes o simplemente alguien que busca contemplar las maravillas del espacio, "Nebulã" es tu fuente confiable de imágenes astronómicas excepcionales.
-            p.text-5xl.mb-5.mt-5.text-center(class="sm:text-left") ¡Come and explore the universe with us!
-        a(href="/plans" class="buttonModal py-2 px-10 bg-purple-500 rounded-full text-white text-4xl hover:bg-purple-700 duration-250 cursor-pointer") Planes
+    .mx-auto.container(class="py-10 my-15")
+        .mx-10
+            h1.text-center.text-7xl.font-bold Sobre Nosotros
+            p.text-justify.text-2xl.my-5 ¿Alguna vez has mirado al cielo nocturno y te has maravillado ante la inmensidad del cosmos?. La astronomía es una ciencia fascinante que nos invita a explorar los secretos del universo, desde las estrellas y galaxias distantes hasta los planetas cercanos. Sin embargo, para adentrarse en este apasionante mundo, uno necesita acceso a imágenes de calidad que muestren la belleza del espacio profundo y los objetos celestes. Aquí es donde entra en juego "Nebulã", una innovadora empresa dedicada a proporcionar imágenes astronómicas de alta calidad de manera accesible para todos los entusiastas de la astronomía. Nuestra misión es acercar las maravillas del universo a tu pantalla, permitiéndote explorar el cosmos desde la comodidad de tu hogar.
+            button(type="button" class="buttonModal py-2 px-10 bg-purple-500 rounded-full text-white text-4xl hover:bg-purple-700 duration-250 cursor-pointer") Presione
+    .mx-auto.container(class="py-10 my-15"  id="services")
+        .mx-10
+            h1.text-center.text-7xl.font-bold Servicios
+            p.text-justify.text-2xl.mt-5 En "Nebulã", creemos que la belleza del universo no debe estar reservada solo para astrónomos profesionales. Por eso, trabajamos arduamente para capturar imágenes espectaculares de los objetos celestes más fascinantes y convertirlas en recursos accesibles para todos. Así que, si eres un apasionado de la astronomía, un educador que busca recursos visuales impactantes o simplemente alguien que busca contemplar las maravillas del espacio, "Nebulã" es tu fuente confiable de imágenes astronómicas excepcionales.
+                p.text-5xl.mb-5.mt-5.text-center(class="sm:text-left") ¡Come and explore the universe with us!
+            a(href="/plans" class="buttonModal py-2 px-10 bg-purple-500 rounded-full text-white text-4xl hover:bg-purple-700 duration-250 cursor-pointer") Planes
 
     script().
         const buttonModal = document.querySelector('.buttonModal');
