@@ -12,7 +12,8 @@
 }
 
 .navegation {
-  position: fixed;
+  position: absolute;
+  background: transparent;
   top: 0;
   left: 0;
   width: 100%;
@@ -26,10 +27,6 @@
 
 body {
   font-family: "Bebas Neue", sans-serif;
-}
-
-footer {
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .plans {
