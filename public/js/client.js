@@ -1,9 +1,15 @@
-import { openOrCreateDatabase, addUser, getUserByEmail } from "./functions.js";
+import { openOrCreateDatabase, addUser, getUserByEmail, handleCardClick } from "./functions.js";
+import { setupNavbarScrollEffect } from "./navBar.js";
 
 document.addEventListener("DOMContentLoaded", async () => {
   try {
+    // Create or Open Database
     await openOrCreateDatabase();
-
+    // Navbar Effect
+    setupNavbarScrollEffect();
+    const buttonsPlan = document.querySelectorAll('.buttonPlan');
+    buttonsPlan.forEach(button => button.onclick = () => handleCardClick());
+    
     const userLogged = JSON.parse(localStorage.getItem("userLogged")) || null;
     
     if (userLogged) {

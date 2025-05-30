@@ -117,3 +117,12 @@ export function getUserByEmail(email) {
     };
   });
 }
+
+export const handleCardClick = () => {
+  const userLogged = JSON.parse(localStorage.getItem('userLogged')) || null;
+  if(!userLogged) {
+      alert('Para continuar esta accion debes registrarte o iniciar sesion.')
+      return;
+  } 
+      alert(`Estimado Usuario ${userLogged.user} esta accion no esta disponible aun. Gracias por la visita!!`)
+}

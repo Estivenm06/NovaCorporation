@@ -1,50 +1,20 @@
 header
   .navegation
     .mx-auto.container
-      .grid(class="md:grid-cols-2 place-items-center mt-5")
+      .grid(class="md:grid-cols-2 place-items-center mt-2 md:mt-3 lg:mt-5")
         a(href="/") 
-          img(src="./img/Logo.png", alt="Logo" class="w-25 img-fluid rounded-full")
-        nav(class="mt-5 md:mt-0")
-          ul.flex.flex-row.text-white.gap-5.flex-wrap.justify-center.list-none
+          img(src="./img/Logo.webp", alt="Logo" class="w-20 md:w-25 lg:35 img-fluid rounded-full bg-transparent")
+        nav(class="mt-2 md:mt-0")
+          ul.flex.flex-row.text-white.gap-2.flex-wrap.justify-center.list-none(class="md:gap-5")
             li
-              a(href="/login" class="text-3xl p-2 text-gray-400 hover:text-gray-700 duration-250 hover:text-4xl login")
+              a(href="/login" class="text-3xl p-2 text-gray-400 hover:text-gray-200 duration-250 hover:text-4xl login")
                 span(class="inline-block transform hover:scale-110 origin-center") Iniciar sesión
             li 
-              a(href="/register" class="text-3xl p-2 text-gray-400 hover:text-gray-700 duration-250 hover:text-4xl register")
+              a(href="/register" class="text-3xl p-2 text-gray-400 hover:text-gray-200 duration-250 hover:text-4xl register")
                 span(class="inline-block transform hover:scale-110 origin-center") Registrarse
             li 
-              a(href="/plans#reviews" class="text-3xl p-2 text-gray-400 hover:text-gray-700 duration-250 hover:text-4xl")
+              a(href="/plans#reviews" class="text-3xl p-2 text-gray-400 hover:text-gray-200 duration-250 hover:text-4xl")
                 span(class="inline-block transform hover:scale-110 origin-center") Reseñas
             li 
-              a(href="/#services" class="text-3xl p-2 text-gray-400 hover:text-gray-700 duration-250 hover:text-4xl")
+              a(href="/#services" class="text-3xl p-2 text-gray-400 hover:text-gray-200 duration-250 hover:text-4xl")
                 span(class="inline-block transform hover:scale-110 origin-center") Servicios
-  script().
-    function setupNavbarScrollEffect() {
-      const navigation = document.querySelector('.navegation');
-      let lastScrollY = window.scrollY;
-      let isVisible = false;
-
-     const controlNavbar = () => {
-        const currentScrollY = window.scrollY;
-
-        if(currentScrollY > lastScrollY && currentScrollY > 100){
-          if(!isVisible) {
-            navigation.classList.add('hidden-navbar');
-            isVisible = true;
-          }
-        }else {
-          if(isVisible) {
-            navigation.classList.remove('hidden-navbar');
-            isVisible = false;
-
-          }
-        }
-      lastScrollY = currentScrollY;
-      }
-      document.addEventListener('scroll', controlNavbar)
-
-      return () => {
-        document.removeEventListener('scroll', controlNavbar)
-      }
-    }
-    const cleanupNavbarEffect = setupNavbarScrollEffect()
